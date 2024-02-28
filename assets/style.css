@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta Sans";
 }
 svg {
   display: block;
@@ -23,19 +27,77 @@ h2 {
 }
 h5 {
   font-size: 18px !important;
-  line-height: 26px !important; /* 144.444% */
+  line-height: 26px !important;
 }
-.bodyTextMedium {
-  font-family: "Poppins";
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.bodyB2Medium {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
 }
-.bodyTextRegular {
-  font-family: "Plus Jakarta Sans";
+.bodyB2Regular {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+.blueGradient {
+  background: radial-gradient(
+    202.34% 202.34% at 0% 0%,
+    #2970ff 22.32%,
+    #48b2ff 100%
+  );
+}
+
+.service {
+  line-height: 100%;
+  position: relative;
+  text-decoration: none;
+  z-index: 0;
+}
+
+.service:before {
+  background: radial-gradient(
+    202.34% 202.34% at 0% 0%,
+    #2970ff 22.32%,
+    #48b2ff 100%
+  );
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.service:hover:before {
+  top: 0;
+}
+
+.service:hover {
+  transition: 0.4s;
+}
+.service:hover .serviceIcon {
+  background-color: #155eef;
+}
+.service:hover .serviceIcon svg path {
+  stroke: white;
+}
+.service:after {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(50%);
+  -ms-transform: translateY(-50%) translateX(50%);
+  transform: translateY(-50%) translateX(50%);
+  font-size: 1.75em;
 }

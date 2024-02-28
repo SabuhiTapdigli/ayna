@@ -31,6 +31,12 @@
             },
             borderRadius: {
               "3xl": "32px",
+              "4xl": "40px",
+            },
+            borderColor: {
+              "gray-300": "#CDD5DF",
+              "gray-200": "#E3E8EF",
+              "blue-500": "#2970FF",
             },
             content: {
               chevronLeft: 'url("./assets/images/chevron-left.svg")',
@@ -754,12 +760,12 @@
 
     <!------------ News Section -------------->
     <section class="max-w-screen-xl mx-auto p-4">
-      <h2>Digər xəbərlər</h2>
+      <h2 class="pb-6 mt-[76px] border-b border-gray-300">Digər xəbərlər</h2>
       <div class="rounded-bl rounded-br h-2 w-56 bg-blue-600"></div>
       <!------------ Cards -------------->
-      <div class="mt-16 grid grid-cols-4 justify-between">
+      <div class="mt-16 flex flex-wrap justify-between items-center">
         <!-- card1 -->
-        <div class="shadow-lg rounded-br-3xl rounded-bl-3xl w-fit">
+        <div class="shadow-lg rounded-3xl w-fit cursor-pointer">
           <div>
             <div class="h-[200px] w-[296px]">
               <img
@@ -770,7 +776,9 @@
           </div>
           <div class="px-5 pb-6">
             <div class="flex justify-left items-center my-4">
-              <div class="bg-blue-50 text-blue-500 px-3 py-1 bodyTextMedium">
+              <div
+                class="bg-blue-50 text-blue-500 px-3 py-1 bodyB2Medium rounded-lg mr-3"
+              >
                 Xəbər
               </div>
 
@@ -793,14 +801,14 @@
               <span class="text-gray-400">15.12.2023</span>
             </div>
             <h5>Heydər Əliyev Mərkəzində</h5>
-            <p class="bodyTextRegular w-[256px] h-[40px] truncate">
+            <p class="bodyB2Regular w-[256px] h-[40px] truncate">
               Leverage agile frameworks to provide a robust synopsis for high
               level overviews. Iterative approaches to corporate.
             </p>
           </div>
         </div>
         <!-- card2 -->
-        <div class="shadow-lg rounded-br-3xl rounded-bl-3xl w-fit">
+        <div class="shadow-lg rounded-3xl w-fit cursor-pointer">
           <div>
             <div class="h-[200px] w-[296px]">
               <img
@@ -811,7 +819,9 @@
           </div>
           <div class="px-5 pb-6">
             <div class="flex justify-left items-center my-4">
-              <div class="bg-blue-50 text-blue-500 px-3 py-1 bodyTextMedium">
+              <div
+                class="bg-blue-50 text-blue-500 px-3 py-1 bodyB2Medium rounded-lg mr-3"
+              >
                 Xəbər
               </div>
 
@@ -834,14 +844,14 @@
               <span class="text-gray-400">15.12.2023</span>
             </div>
             <h5>Heydər Əliyev Mərkəzində</h5>
-            <p class="bodyTextRegular w-[256px] h-[40px] truncate">
+            <p class="bodyB2Regular w-[256px] h-[40px] truncate">
               Leverage agile frameworks to provide a robust synopsis for high
               level overviews. Iterative approaches to corporate.
             </p>
           </div>
         </div>
         <!-- card3 -->
-        <div class="shadow-lg rounded-br-3xl rounded-bl-3xl w-fit">
+        <div class="shadow-lg rounded-3xl w-fit cursor-pointer">
           <div>
             <div class="h-[200px] w-[296px]">
               <img
@@ -852,7 +862,9 @@
           </div>
           <div class="px-5 pb-6">
             <div class="flex justify-left items-center my-4">
-              <div class="bg-blue-50 text-blue-500 px-3 py-1 bodyTextMedium">
+              <div
+                class="bg-blue-50 text-blue-500 px-3 py-1 bodyB2Medium rounded-lg mr-3"
+              >
                 Xəbər
               </div>
 
@@ -875,14 +887,14 @@
               <span class="text-gray-400">15.12.2023</span>
             </div>
             <h5>Heydər Əliyev Mərkəzində</h5>
-            <p class="bodyTextRegular w-[256px] h-[40px] truncate">
+            <p class="bodyB2Regular w-[256px] h-[40px] truncate">
               Leverage agile frameworks to provide a robust synopsis for high
               level overviews. Iterative approaches to corporate.
             </p>
           </div>
         </div>
         <!-- card4 -->
-        <div class="shadow-lg rounded-br-3xl rounded-bl-3xl w-fit">
+        <div class="shadow-lg rounded-3xl w-fit cursor-pointer">
           <div>
             <div class="h-[200px] w-[296px]">
               <img
@@ -893,7 +905,9 @@
           </div>
           <div class="px-5 pb-6">
             <div class="flex justify-left items-center my-4">
-              <div class="bg-blue-50 text-blue-500 px-3 py-1 bodyTextMedium">
+              <div
+                class="bg-blue-50 text-blue-500 px-3 py-1 bodyB2Medium rounded-lg mr-3"
+              >
                 Xəbər
               </div>
 
@@ -916,15 +930,303 @@
               <span class="text-gray-400">15.12.2023</span>
             </div>
             <h5>Heydər Əliyev Mərkəzində</h5>
-            <p class="bodyTextRegular w-[256px] h-[40px] truncate">
+            <p class="bodyB2Regular w-[256px] h-[40px] truncate">
               Leverage agile frameworks to provide a robust synopsis for high
               level overviews. Iterative approaches to corporate.
             </p>
           </div>
         </div>
       </div>
+      <!------------ Read More -------------->
+      <a
+        href=""
+        class="px-6 py-4 rounded-xl border-[1.5px] border-gray-300 block w-fit mx-auto mt-16 mb-20"
+        >Ətraflı bax...</a
+      >
     </section>
 
+    <!------------ Electron Service -------------->
+    <section class="max-w-screen-xl mx-auto">
+      <!-- reusable -->
+      <div class="flex flex-col items-center mb-16 mt-20">
+        <h2 class="border-b border-gray-300 w-[400px] text-center pb-6">
+          Elektron xidmətlər
+        </h2>
+        <div class="rounded-bl rounded-br h-2 w-56 bg-blue-600"></div>
+      </div>
+      <div class="grid grid-cols-4 gap-6">
+        <!-- item -->
+        <div
+          class="px-6 pt-6 pb-11 rounded-3xl border border-gray-200 w-fit relative overflow-hidden service cursor-pointer"
+        >
+          <img
+            src="./assets/images/fullStar.svg"
+            class="absolute top-0 -right-[15px] h-[144px] w-[144px]"
+          />
+
+          <div
+            class="px-6 py-3 bg-blue-50 rounded-4xl border-none w-fit serviceIcon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M18.5008 15.8369C19.9567 16.5683 21.2049 17.742 22.1161 19.2096C22.2965 19.5003 22.3867 19.6456 22.4179 19.8468C22.4813 20.2558 22.2016 20.7585 21.8207 20.9204C21.6333 21 21.4225 21 21.0008 21M16.5008 11.5322C17.9825 10.7959 19.0008 9.26686 19.0008 7.5C19.0008 5.73314 17.9825 4.20411 16.5008 3.46776M14.5008 7.5C14.5008 9.98528 12.4861 12 10.0008 12C7.51553 12 5.50081 9.98528 5.50081 7.5C5.50081 5.01472 7.51553 3 10.0008 3C12.4861 3 14.5008 5.01472 14.5008 7.5ZM3.06004 18.9383C4.65435 16.5446 7.17019 15 10.0008 15C12.8314 15 15.3473 16.5446 16.9416 18.9383C17.2909 19.4628 17.4655 19.725 17.4454 20.0599C17.4297 20.3207 17.2588 20.64 17.0504 20.7976C16.7827 21 16.4146 21 15.6785 21H4.32317C3.58698 21 3.21889 21 2.95125 20.7976C2.74286 20.64 2.5719 20.3207 2.55625 20.0599C2.53614 19.725 2.71078 19.4628 3.06004 18.9383Z"
+                stroke="#004EEB"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h4 class="mt-8">Vətəndaşlar üçün</h4>
+          <p class="mt-3 w-[248px]">
+            Vətəndaşların müraciətləri haqqında AR-nın qanunu
+          </p>
+        </div>
+        <!-- item -->
+        <div
+          class="px-6 pt-6 pb-11 rounded-3xl border border-gray-200 w-fit relative overflow-hidden service cursor-pointer"
+        >
+          <img
+            src="./assets/images/fullStar.svg"
+            class="absolute top-0 -right-[15px] h-[144px] w-[144px]"
+          />
+
+          <div
+            class="px-6 py-3 bg-blue-50 rounded-4xl border-none w-fit serviceIcon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M18.5008 15.8369C19.9567 16.5683 21.2049 17.742 22.1161 19.2096C22.2965 19.5003 22.3867 19.6456 22.4179 19.8468C22.4813 20.2558 22.2016 20.7585 21.8207 20.9204C21.6333 21 21.4225 21 21.0008 21M16.5008 11.5322C17.9825 10.7959 19.0008 9.26686 19.0008 7.5C19.0008 5.73314 17.9825 4.20411 16.5008 3.46776M14.5008 7.5C14.5008 9.98528 12.4861 12 10.0008 12C7.51553 12 5.50081 9.98528 5.50081 7.5C5.50081 5.01472 7.51553 3 10.0008 3C12.4861 3 14.5008 5.01472 14.5008 7.5ZM3.06004 18.9383C4.65435 16.5446 7.17019 15 10.0008 15C12.8314 15 15.3473 16.5446 16.9416 18.9383C17.2909 19.4628 17.4655 19.725 17.4454 20.0599C17.4297 20.3207 17.2588 20.64 17.0504 20.7976C16.7827 21 16.4146 21 15.6785 21H4.32317C3.58698 21 3.21889 21 2.95125 20.7976C2.74286 20.64 2.5719 20.3207 2.55625 20.0599C2.53614 19.725 2.71078 19.4628 3.06004 18.9383Z"
+                stroke="#004EEB"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h4 class="mt-8">Vətəndaşlar üçün</h4>
+          <p class="mt-3 w-[248px]">
+            Vətəndaşların müraciətləri haqqında AR-nın qanunu
+          </p>
+        </div>
+        <!-- item -->
+        <div
+          class="px-6 pt-6 pb-11 rounded-3xl border border-gray-200 w-fit relative overflow-hidden service cursor-pointer"
+        >
+          <img
+            src="./assets/images/fullStar.svg"
+            class="absolute top-0 -right-[15px] h-[144px] w-[144px]"
+          />
+
+          <div
+            class="px-6 py-3 bg-blue-50 rounded-4xl border-none w-fit serviceIcon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M18.5008 15.8369C19.9567 16.5683 21.2049 17.742 22.1161 19.2096C22.2965 19.5003 22.3867 19.6456 22.4179 19.8468C22.4813 20.2558 22.2016 20.7585 21.8207 20.9204C21.6333 21 21.4225 21 21.0008 21M16.5008 11.5322C17.9825 10.7959 19.0008 9.26686 19.0008 7.5C19.0008 5.73314 17.9825 4.20411 16.5008 3.46776M14.5008 7.5C14.5008 9.98528 12.4861 12 10.0008 12C7.51553 12 5.50081 9.98528 5.50081 7.5C5.50081 5.01472 7.51553 3 10.0008 3C12.4861 3 14.5008 5.01472 14.5008 7.5ZM3.06004 18.9383C4.65435 16.5446 7.17019 15 10.0008 15C12.8314 15 15.3473 16.5446 16.9416 18.9383C17.2909 19.4628 17.4655 19.725 17.4454 20.0599C17.4297 20.3207 17.2588 20.64 17.0504 20.7976C16.7827 21 16.4146 21 15.6785 21H4.32317C3.58698 21 3.21889 21 2.95125 20.7976C2.74286 20.64 2.5719 20.3207 2.55625 20.0599C2.53614 19.725 2.71078 19.4628 3.06004 18.9383Z"
+                stroke="#004EEB"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h4 class="mt-8">Vətəndaşlar üçün</h4>
+          <p class="mt-3 w-[248px]">
+            Vətəndaşların müraciətləri haqqında AR-nın qanunu
+          </p>
+        </div>
+        <!-- item -->
+        <div
+          class="px-6 pt-6 pb-11 rounded-3xl border border-gray-200 w-fit relative overflow-hidden service cursor-pointer"
+        >
+          <img
+            src="./assets/images/fullStar.svg"
+            class="absolute top-0 -right-[15px] h-[144px] w-[144px]"
+          />
+
+          <div
+            class="px-6 py-3 bg-blue-50 rounded-4xl border-none w-fit serviceIcon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M18.5008 15.8369C19.9567 16.5683 21.2049 17.742 22.1161 19.2096C22.2965 19.5003 22.3867 19.6456 22.4179 19.8468C22.4813 20.2558 22.2016 20.7585 21.8207 20.9204C21.6333 21 21.4225 21 21.0008 21M16.5008 11.5322C17.9825 10.7959 19.0008 9.26686 19.0008 7.5C19.0008 5.73314 17.9825 4.20411 16.5008 3.46776M14.5008 7.5C14.5008 9.98528 12.4861 12 10.0008 12C7.51553 12 5.50081 9.98528 5.50081 7.5C5.50081 5.01472 7.51553 3 10.0008 3C12.4861 3 14.5008 5.01472 14.5008 7.5ZM3.06004 18.9383C4.65435 16.5446 7.17019 15 10.0008 15C12.8314 15 15.3473 16.5446 16.9416 18.9383C17.2909 19.4628 17.4655 19.725 17.4454 20.0599C17.4297 20.3207 17.2588 20.64 17.0504 20.7976C16.7827 21 16.4146 21 15.6785 21H4.32317C3.58698 21 3.21889 21 2.95125 20.7976C2.74286 20.64 2.5719 20.3207 2.55625 20.0599C2.53614 19.725 2.71078 19.4628 3.06004 18.9383Z"
+                stroke="#004EEB"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h4 class="mt-8">Vətəndaşlar üçün</h4>
+          <p class="mt-3 w-[248px]">
+            Vətəndaşların müraciətləri haqqında AR-nın qanunu
+          </p>
+        </div>
+        <!-- item -->
+        <div
+          class="px-6 pt-6 pb-11 rounded-3xl border border-gray-200 w-fit relative overflow-hidden service cursor-pointer"
+        >
+          <img
+            src="./assets/images/fullStar.svg"
+            class="absolute top-0 -right-[15px] h-[144px] w-[144px]"
+          />
+
+          <div
+            class="px-6 py-3 bg-blue-50 rounded-4xl border-none w-fit serviceIcon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M18.5008 15.8369C19.9567 16.5683 21.2049 17.742 22.1161 19.2096C22.2965 19.5003 22.3867 19.6456 22.4179 19.8468C22.4813 20.2558 22.2016 20.7585 21.8207 20.9204C21.6333 21 21.4225 21 21.0008 21M16.5008 11.5322C17.9825 10.7959 19.0008 9.26686 19.0008 7.5C19.0008 5.73314 17.9825 4.20411 16.5008 3.46776M14.5008 7.5C14.5008 9.98528 12.4861 12 10.0008 12C7.51553 12 5.50081 9.98528 5.50081 7.5C5.50081 5.01472 7.51553 3 10.0008 3C12.4861 3 14.5008 5.01472 14.5008 7.5ZM3.06004 18.9383C4.65435 16.5446 7.17019 15 10.0008 15C12.8314 15 15.3473 16.5446 16.9416 18.9383C17.2909 19.4628 17.4655 19.725 17.4454 20.0599C17.4297 20.3207 17.2588 20.64 17.0504 20.7976C16.7827 21 16.4146 21 15.6785 21H4.32317C3.58698 21 3.21889 21 2.95125 20.7976C2.74286 20.64 2.5719 20.3207 2.55625 20.0599C2.53614 19.725 2.71078 19.4628 3.06004 18.9383Z"
+                stroke="#004EEB"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h4 class="mt-8">Vətəndaşlar üçün</h4>
+          <p class="mt-3 w-[248px]">
+            Vətəndaşların müraciətləri haqqında AR-nın qanunu
+          </p>
+        </div>
+        <!-- item -->
+        <div
+          class="px-6 pt-6 pb-11 rounded-3xl border border-gray-200 w-fit relative overflow-hidden service cursor-pointer"
+        >
+          <img
+            src="./assets/images/fullStar.svg"
+            class="absolute top-0 -right-[15px] h-[144px] w-[144px]"
+          />
+
+          <div
+            class="px-6 py-3 bg-blue-50 rounded-4xl border-none w-fit serviceIcon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M18.5008 15.8369C19.9567 16.5683 21.2049 17.742 22.1161 19.2096C22.2965 19.5003 22.3867 19.6456 22.4179 19.8468C22.4813 20.2558 22.2016 20.7585 21.8207 20.9204C21.6333 21 21.4225 21 21.0008 21M16.5008 11.5322C17.9825 10.7959 19.0008 9.26686 19.0008 7.5C19.0008 5.73314 17.9825 4.20411 16.5008 3.46776M14.5008 7.5C14.5008 9.98528 12.4861 12 10.0008 12C7.51553 12 5.50081 9.98528 5.50081 7.5C5.50081 5.01472 7.51553 3 10.0008 3C12.4861 3 14.5008 5.01472 14.5008 7.5ZM3.06004 18.9383C4.65435 16.5446 7.17019 15 10.0008 15C12.8314 15 15.3473 16.5446 16.9416 18.9383C17.2909 19.4628 17.4655 19.725 17.4454 20.0599C17.4297 20.3207 17.2588 20.64 17.0504 20.7976C16.7827 21 16.4146 21 15.6785 21H4.32317C3.58698 21 3.21889 21 2.95125 20.7976C2.74286 20.64 2.5719 20.3207 2.55625 20.0599C2.53614 19.725 2.71078 19.4628 3.06004 18.9383Z"
+                stroke="#004EEB"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h4 class="mt-8">Vətəndaşlar üçün</h4>
+          <p class="mt-3 w-[248px]">
+            Vətəndaşların müraciətləri haqqında AR-nın qanunu
+          </p>
+        </div>
+        <!-- item -->
+        <div
+          class="px-6 pt-6 pb-11 rounded-3xl border border-gray-200 w-fit relative overflow-hidden service cursor-pointer"
+        >
+          <img
+            src="./assets/images/fullStar.svg"
+            class="absolute top-0 -right-[15px] h-[144px] w-[144px]"
+          />
+
+          <div
+            class="px-6 py-3 bg-blue-50 rounded-4xl border-none w-fit serviceIcon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M18.5008 15.8369C19.9567 16.5683 21.2049 17.742 22.1161 19.2096C22.2965 19.5003 22.3867 19.6456 22.4179 19.8468C22.4813 20.2558 22.2016 20.7585 21.8207 20.9204C21.6333 21 21.4225 21 21.0008 21M16.5008 11.5322C17.9825 10.7959 19.0008 9.26686 19.0008 7.5C19.0008 5.73314 17.9825 4.20411 16.5008 3.46776M14.5008 7.5C14.5008 9.98528 12.4861 12 10.0008 12C7.51553 12 5.50081 9.98528 5.50081 7.5C5.50081 5.01472 7.51553 3 10.0008 3C12.4861 3 14.5008 5.01472 14.5008 7.5ZM3.06004 18.9383C4.65435 16.5446 7.17019 15 10.0008 15C12.8314 15 15.3473 16.5446 16.9416 18.9383C17.2909 19.4628 17.4655 19.725 17.4454 20.0599C17.4297 20.3207 17.2588 20.64 17.0504 20.7976C16.7827 21 16.4146 21 15.6785 21H4.32317C3.58698 21 3.21889 21 2.95125 20.7976C2.74286 20.64 2.5719 20.3207 2.55625 20.0599C2.53614 19.725 2.71078 19.4628 3.06004 18.9383Z"
+                stroke="#004EEB"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h4 class="mt-8">Vətəndaşlar üçün</h4>
+          <p class="mt-3 w-[248px]">
+            Vətəndaşların müraciətləri haqqında AR-nın qanunu
+          </p>
+        </div>
+        <!-- item -->
+        <div
+          class="px-6 pt-6 pb-11 rounded-3xl border border-gray-200 w-fit relative overflow-hidden service cursor-pointer"
+        >
+          <img
+            src="./assets/images/fullStar.svg"
+            class="absolute top-0 -right-[15px] h-[144px] w-[144px]"
+          />
+
+          <div
+            class="px-6 py-3 bg-blue-50 rounded-4xl border-none w-fit serviceIcon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M18.5008 15.8369C19.9567 16.5683 21.2049 17.742 22.1161 19.2096C22.2965 19.5003 22.3867 19.6456 22.4179 19.8468C22.4813 20.2558 22.2016 20.7585 21.8207 20.9204C21.6333 21 21.4225 21 21.0008 21M16.5008 11.5322C17.9825 10.7959 19.0008 9.26686 19.0008 7.5C19.0008 5.73314 17.9825 4.20411 16.5008 3.46776M14.5008 7.5C14.5008 9.98528 12.4861 12 10.0008 12C7.51553 12 5.50081 9.98528 5.50081 7.5C5.50081 5.01472 7.51553 3 10.0008 3C12.4861 3 14.5008 5.01472 14.5008 7.5ZM3.06004 18.9383C4.65435 16.5446 7.17019 15 10.0008 15C12.8314 15 15.3473 16.5446 16.9416 18.9383C17.2909 19.4628 17.4655 19.725 17.4454 20.0599C17.4297 20.3207 17.2588 20.64 17.0504 20.7976C16.7827 21 16.4146 21 15.6785 21H4.32317C3.58698 21 3.21889 21 2.95125 20.7976C2.74286 20.64 2.5719 20.3207 2.55625 20.0599C2.53614 19.725 2.71078 19.4628 3.06004 18.9383Z"
+                stroke="#004EEB"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h4 class="mt-8">Vətəndaşlar üçün</h4>
+          <p class="mt-3 w-[248px]">
+            Vətəndaşların müraciətləri haqqında AR-nın qanunu
+          </p>
+        </div>
+      </div>
+      <!------------ Read More -------------->
+      <a
+        href=""
+        class="px-6 py-4 rounded-xl border-[1.5px] border-gray-300 block w-fit mx-auto mt-16 mb-20"
+        >Hamısına bax...</a
+      >
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
