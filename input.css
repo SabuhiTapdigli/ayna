@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Plus Jakarta Sans;
+  }
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+  h4 {
+    @apply text-xl font-semibold;
+  }
+  h5 {
+    @apply text-lg font-semibold;
+  }
+  h5 {
+    @apply text-base;
+  }
+}
+@layer components {
+  .bodyB2Medium {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .bodyB2Regular {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .displayMediumD2 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 72px;
+  }
+
+  .blueGradient {
+    background: radial-gradient(
+      202.34% 202.34% at 0% 0%,
+      #2970ff 22.32%,
+      #48b2ff 100%
+    );
+  }
+  .grayGradient {
+    background: radial-gradient(
+      83.48% 83.48% at 50% 50%,
+      #cadbff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  /* ---- Electron Service Hover Effect ---  */
+  .service {
+    line-height: 100%;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+  }
+
+  .service:before {
+    background: radial-gradient(
+      202.34% 202.34% at 0% 0%,
+      #2970ff 22.32%,
+      #48b2ff 100%
+    );
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+  }
+
+  .service:hover:before {
+    top: 0;
+  }
+
+  .service:hover {
+    transition: 0.4s;
+  }
+  .service:hover .serviceIcon {
+    background-color: #155eef;
+  }
+  .service:hover .serviceIcon svg path {
+    stroke: white;
+  }
+  .service:after {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(50%);
+    -ms-transform: translateY(-50%) translateX(50%);
+    transform: translateY(-50%) translateX(50%);
+    font-size: 1.75em;
+  }
+  /* --------- end -------- */
+
+  /* ---- Sidebar Drawer ---  */
+
+  .sidebar,
+  .sidebarDrawer label #btn,
+  .sidebarDrawer label #cancel {
+    transition: all 0.5s ease;
+  }
+
+  #check:checked ~ .sidebar {
+    left: 0;
+  }
+  #check:checked ~ label #btn {
+    margin-left: 506px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel {
+    margin-left: 506px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .electronLink:hover .electronLinkIcon {
+    background-color: #d1e0ff;
+  }
+  .electronRibon {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, margin-right 0.5s, visibility 0.5s;
+  }
+
+  .electronLink:hover .electronRibon {
+    opacity: 1;
+    visibility: visible;
+    margin-right: 16px;
+  }
+
+  /* --------- end -------- */
+
+  /* ---- Project  ---  */
+
+  /* TODO : need to fix repeating css in this sectionv on html  */
+  .project {
+    position: relative;
+    transition: height 0.5s ease-in-out;
+    border-radius: 40px;
+  }
+  .radio:checked + label {
+    width: 392px;
+    height: 512px;
+  }
+  .radio:checked + label h2 {
+    transition: 0.7s;
+  }
+  .radio:not(:checked) + label h2 {
+    transform: rotate(-90deg);
+    transition: 0.7s;
+  }
+  .radio:not(:checked) + label {
+    justify-content: center;
+  }
+  .radio:not(:checked) + label p {
+    opacity: 0;
+    transition: opacity 2s ease;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    transition: 0.7s;
+  }
+  /* --------- end -------- */
+
+  /* --------- FAQ -------- */
+  .accordion-content {
+    height: 0;
+    overflow: hidden;
+    transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .accordion-toggle:checked ~ .accordion-content {
+    height: auto; /* Adjust based on your content */
+    padding: 0 40px 32px 40px;
+  }
+  .accordion-toggle:checked ~ label .rotate-180 {
+    transform: rotate(0deg);
+  }
+
+  /* --------- end -------- */
+}
+
+svg {
+  display: block;
+}
