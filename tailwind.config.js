@@ -14,6 +14,7 @@ module.exports = {
         gray: {
           300: "#D0D5DD",
           400: "#9AA3B2",
+          450: "#979797",
         },
         black: {
           800: "#202939",
@@ -28,6 +29,7 @@ module.exports = {
       backgroundColor: {
         "blue-50": "#EFF4FF",
         gray: {
+          50: "#F8FAFC",
           100: "#ECF1F8",
           200: "#E3E8EF",
           300: "#CDD5DF",
@@ -53,10 +55,14 @@ module.exports = {
         chevronRight: 'url("./assets/images/chevron-right.svg")',
       },
       boxShadow: {
+        sm: " 0px 8px 24px 0px rgba(19, 37, 70, 0.08)",
         md: "0px 12px 24px 0px rgba(19, 37, 70, 0.10)",
       },
       backgroundImage: {
         projectBg: "url(/assets/images/projects.svg)",
+      },
+      gridTemplateColumns: {
+        partner: "384px 712px",
       },
     },
   },

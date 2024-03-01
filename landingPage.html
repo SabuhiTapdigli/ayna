@@ -1204,7 +1204,7 @@
 
     <!-- Swiper -->
     <div class="bg-blue-100">
-      <div class="swiper mySwiper max-w-screen-xl mx-auto py-[80px]">
+      <div class="swiper topSlider max-w-screen-xl mx-auto py-[80px]">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img class="rounded-3xl" src="./assets/images/slide1.png" />
@@ -1974,9 +1974,96 @@
     </section>
 
     <!------------ Routes -------------->
-    <section class="bg-gray-300">
-      <div class="max-w-screen-xl mx-auto">
-        <div class="my-20"></div>
+    <section class="bg-gray-50 rounded-3xl w-full p-4">
+      <div
+        class="max-w-screen-xl mx-auto py-20 grid grid-cols-2 justify-between items-center gap-10"
+      >
+        <div>
+          <div class="w-fit">
+            <h2 class="pb-6 border-b border-gray-300">Digər xəbərlər</h2>
+            <div class="rounded-bl rounded-br h-2 w-40 bg-blue-600"></div>
+          </div>
+          <p class="text-gray-450 text-base font-normal pt-6 pb-10 leading-6">
+            Şəhərdəki avtobus xəttlərinin istiqamətini
+            <span class="text-blue-600 font-bold">WikiRoutes</span>
+            üzərindən izləyə və istədiyiniz marşrutu planlaya bilərsiz
+          </p>
+          <a
+            href=""
+            class="bg-blue-600 rounded-xl px-6 py-4 text-white text-base font-medium cursor-pointer"
+            >Keçid et</a
+          >
+        </div>
+        <div>
+          <img src="./assets/images/route.svg" />
+        </div>
+      </div>
+    </section>
+
+    <!------------ Partners -------------->
+
+    <section>
+      <div
+        class="grid grid-cols-partner justify-between max-w-screen-xl mx-auto pt-16 pb-20 gap-10"
+      >
+        <div class="flex">
+          <div class="flex flex-col justify-between items-center">
+            <div class="line w-1 h-[136px] bg-gray-100 activeLine"></div>
+            <div class="line w-1 h-[136px] bg-gray-100"></div>
+            <div class="line w-1 h-[136px] bg-gray-100"></div>
+            <div class="line w-1 h-[136px] bg-gray-100"></div>
+          </div>
+          <div
+            class="ml-16 w-[320px] flex flex-col justify-center items-center"
+          >
+            <div
+              class="partnerLogo activeLogo flex gap-4 px-6 py-4 w-full items-center"
+            >
+              <img class="p-3" src="./assets/images/partnerLogo1.svg" />
+              <p>Bakı Beynəlxalq Avtovağzal Kompleksi</p>
+            </div>
+            <div class="partnerLogo flex gap-4 p-4 w-full items-center">
+              <img src="./assets/images/partnerLogo2.svg" />
+              <p>Beynəlxalq Avtomobil Nəqliyaytı İttifaqı</p>
+            </div>
+            <div class="partnerLogo flex gap-4 p-4 w-full items-center">
+              <img class="px-5 py-3" src="./assets/images/partnerLogo3.svg" />
+              <p>Beynəlxalq Nəqliyyat Forumu</p>
+            </div>
+            <div class="partnerLogo flex gap-4 p-4 w-full items-center">
+              <img class="p-3" src="./assets/images/partnerLogo4.svg" />
+              <p>Beynəlxalq Nəqliyyat Forumu</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper partnersImage">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://swiperjs.com/demos/images/nature-1.jpg"
+                class="rounded-3xl"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://swiperjs.com/demos/images/nature-2.jpg"
+                class="rounded-3xl"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://swiperjs.com/demos/images/nature-3.jpg"
+                class="rounded-3xl"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://swiperjs.com/demos/images/nature-4.jpg"
+                class="rounded-3xl"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1997,13 +2084,44 @@
       }
     </script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".topSlider", {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      let partnerLogo = document.querySelectorAll(".partnerLogo");
+      let line = document.querySelectorAll(".line");
+      var swiper2 = new Swiper(".partnersImage", {
+        loop: true,
+        spaceBetween: 10,
+        // autoplay: {
+        //   delay: 2000,
+        // },
+        on: {
+          slideChange: function () {
+            partnerLogo.forEach((i, index) => {
+              if (this.realIndex === index) {
+                i.classList.add("activeLogo");
+              } else {
+                i.classList.remove("activeLogo");
+              }
+            });
+
+            line.forEach((i, index) => {
+              if (this.realIndex === index) {
+                i.classList.add("activeLine");
+              } else {
+                i.classList.remove("activeLine");
+              }
+            });
+
+            console.log("Active slide index is:", this.realIndex);
+          },
         },
       });
     </script>
