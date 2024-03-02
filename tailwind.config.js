@@ -28,6 +28,7 @@ module.exports = {
       },
       backgroundColor: {
         "blue-50": "#EFF4FF",
+        "blue-500": "#155EEF",
         gray: {
           50: "#F8FAFC",
           100: "#ECF1F8",
@@ -36,16 +37,18 @@ module.exports = {
         },
       },
       borderRadius: {
-        "3xl": "32px",
-        "4xl": "40px",
+        "4xl": "32px",
+        "5xl": "40px",
       },
       borderColor: {
         blue: {
           500: "#2970FF",
         },
+        lineBlue: "#2A3D63",
         gray: {
-          300: "#CDD5DF",
           200: "#E3E8EF",
+          300: "#CDD5DF",
+          500: "#697586",
         },
 
         "blue-500": "#2970FF",
@@ -53,6 +56,8 @@ module.exports = {
       content: {
         chevronLeft: 'url("./assets/images/chevron-left.svg")',
         chevronRight: 'url("./assets/images/chevron-right.svg")',
+        chevronRightWhite: 'url("./assets/images/chevron-right-white.svg")',
+        chevronLeftBlue: 'url("./assets/images/chevron-left-blue.svg")',
       },
       boxShadow: {
         sm: " 0px 8px 24px 0px rgba(19, 37, 70, 0.08)",
