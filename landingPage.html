@@ -481,88 +481,700 @@
     <!------------ NavBottom -------------->
     <div class="bg-blue-900">
       <div
-        class="flex flex-wrap justify-between items-center max-w-screen-xl mx-auto p-4"
+        class="flex flex-wrap justify-between items-center max-w-screen-xl mx-auto"
       >
         <div class="flex gap-6">
-          <div
-            class="text-white flex justify-center items-center cursor-pointer gap-1"
-          >
-            Haqqımızda
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
+          <div class="relative group">
+            <div
+              class="text-white flex justify-center items-center cursor-pointer gap-1 p-6"
             >
-              <path
-                d="M4 6L8 10L12 6"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+              Haqqımızda
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                class="group-hover:rotate-180 transition-all"
+              >
+                <path
+                  d="M4 6L8 10L12 6"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div
+              class="absolute left-0 invisible group-hover:visible z-50 rounded-3xl opacity-0 group-hover:opacity-100 transition-all"
+            >
+              <div class="h-4 bg-blue-100"></div>
+              <div class="h-4 bg-blue-900 rounded-t-3xl"></div>
+
+              <ul
+                class="flex flex-col gap-2 px-5 pb-5 text-white [&>*]:py-2 [&>*]:w-[200px] bg-blue-900 rounded-b-3xl cursor-pointer"
+              >
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="currentColor"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+
+                    Haqqımızda</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Ümumi məlumatlar</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Nizamnamə</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Struktur</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Karyera</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Nəqliyyat könüllüləri</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div
-            class="text-white flex justify-center items-center cursor-pointer gap-1"
-          >
-            Xidmətlər
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
+          <div class="relative group">
+            <div
+              class="text-white flex justify-center items-center cursor-pointer gap-1 p-6"
             >
-              <path
-                d="M4 6L8 10L12 6"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+              Xidmətlər
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                class="group-hover:rotate-180 transition-all"
+              >
+                <path
+                  d="M4 6L8 10L12 6"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div
+              class="absolute left-0 invisible group-hover:visible z-50 rounded-3xl opacity-0 group-hover:opacity-100 transition-all"
+            >
+              <div class="h-4 bg-blue-100"></div>
+              <div class="h-4 bg-blue-900 rounded-t-3xl"></div>
+
+              <ul
+                class="flex flex-col gap-2 px-5 pb-5 text-white [&>*]:py-2 [&>*]:w-[200px] bg-blue-900 rounded-b-3xl cursor-pointer"
+              >
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+
+                    Haqqımızda</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Ümumi məlumatlar</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Nizamnamə</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Struktur</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Karyera</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Nəqliyyat könüllüləri</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div
-            class="text-white flex justify-center items-center cursor-pointer gap-1"
-          >
-            Qanunvericilik
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
+          <div class="relative group">
+            <div
+              class="text-white flex justify-center items-center cursor-pointer gap-1 p-6"
             >
-              <path
-                d="M4 6L8 10L12 6"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+              Qanunvericilik
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                class="group-hover:rotate-180 transition-all"
+              >
+                <path
+                  d="M4 6L8 10L12 6"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div
+              class="absolute left-0 invisible group-hover:visible z-50 rounded-3xl opacity-0 group-hover:opacity-100 transition-all"
+            >
+              <div class="h-4 bg-blue-100"></div>
+              <div class="h-4 bg-blue-900 rounded-t-3xl"></div>
+
+              <ul
+                class="flex flex-col gap-2 px-5 pb-5 text-white [&>*]:py-2 [&>*]:w-[200px] bg-blue-900 rounded-b-3xl cursor-pointer"
+              >
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+
+                    Haqqımızda</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Ümumi məlumatlar</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Nizamnamə</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Struktur</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Karyera</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Nəqliyyat könüllüləri</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div
-            class="text-white flex justify-center items-center cursor-pointer gap-1"
-          >
-            Media
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
+          <div class="relative group">
+            <div
+              class="text-white flex justify-center items-center cursor-pointer gap-1 p-6"
             >
-              <path
-                d="M4 6L8 10L12 6"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+              Media
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                class="group-hover:rotate-180 transition-all"
+              >
+                <path
+                  d="M4 6L8 10L12 6"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div
+              class="absolute left-0 invisible group-hover:visible z-50 rounded-3xl opacity-0 group-hover:opacity-100 transition-all"
+            >
+              <div class="h-4 bg-blue-100"></div>
+              <div class="h-4 bg-blue-900 rounded-t-3xl"></div>
+
+              <ul
+                class="flex flex-col gap-2 px-5 pb-5 text-white [&>*]:py-2 [&>*]:w-[200px] bg-blue-900 rounded-b-3xl cursor-pointer"
+              >
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+
+                    Haqqımızda</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Ümumi məlumatlar</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Nizamnamə</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Struktur</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Karyera</a
+                  >
+                </li>
+                <li class="group/link active:bg-blue-700 active:rounded-xl">
+                  <a
+                    class="group-hover/link:ml-4 transition-all flex gap-2 items-center"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="20"
+                      viewBox="0 0 4 20"
+                      fill="none"
+                      class="invisible text-blue-500 group-hover/link:visible absolute left-0 opacity-0 group-hover/link:left-5 group-hover/link:opacity-100 transition-opacity duration-300 group-active/link:color-white group-active/link:text-white"
+                    >
+                      <path
+                        d="M2 2V18"
+                        stroke="#2970FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Nəqliyyat könüllüləri</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
           <div
             class="text-white flex justify-center items-center cursor-pointer"
